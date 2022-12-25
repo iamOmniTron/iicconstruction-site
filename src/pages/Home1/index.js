@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Column, Row, Img, Text, Line, Button, Stack, List } from "components";
+import { Column, Row, Img, Text, Line, Button, Stack, List } from "../../components";
 
 const Home1Page = () => {
   const navigate = useNavigate();
@@ -83,7 +83,7 @@ const Home1Page = () => {
             Projects
           </Text>
           <Button
-            className="common-pointer font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[8%]"
+            className="common-pointer font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[20%]"
             onClick={handleNavigate26}
           >
             Contact us
@@ -92,7 +92,7 @@ const Home1Page = () => {
         <Column className="lg:mt-[10px] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] w-[100%]">
           <Stack className="lg:h-[1067px] xl:h-[1220px] 2xl:h-[1372px] 3xl:h-[1647px] w-[100%]">
             <Column
-              className="absolute bg-cover bg-repeat justify-end lg:p-[41px] xl:p-[47px] 2xl:p-[53px] 3xl:p-[63px] top-[0] w-[100%]"
+              className=" bg-cover bg-repeat justify-end lg:p-[41px] z-40 top-[0] w-[100%]"
               style={{ backgroundImage: "url('images/img_group17.png')" }}
             >
               <Text className="font-semibold lg:leading-[62px] xl:leading-[71px] 2xl:leading-[80px] 3xl:leading-[96px] 3xl:ml-[114px] lg:ml-[73px] xl:ml-[84px] 2xl:ml-[95px] lg:mt-[23px] xl:mt-[26px] 2xl:mt-[30px] 3xl:mt-[36px] lg:text-[62px] xl:text-[71px] 2xl:text-[80px] 3xl:text-[96px] text-indigo_900 w-[38%]">
@@ -102,17 +102,18 @@ const Home1Page = () => {
                 Delivery.
               </Text>
               <Text className="font-normal leading-[normal] 3xl:ml-[114px] lg:ml-[73px] xl:ml-[84px] 2xl:ml-[95px] lg:mt-[42px] xl:mt-[48px] 2xl:mt-[54px] 3xl:mt-[64px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-black_900 w-[31%]">
-                A customer-first approach, delivering quality <br />
+                A customer-first approach, delivering quality
                 projects from inception to completion on time
-                <br />
-                <br />
                 and within budgeted time frame.{" "}
               </Text>
-              <Button className="font-normal 3xl:ml-[114px] lg:ml-[73px] xl:ml-[84px] 2xl:ml-[95px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[11%]">
+              <a href="/profile.pdf" download>
+              <Button download className="font-normal 3xl:ml-[114px] lg:ml-[73px] xl:ml-[84px] 2xl:ml-[95px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[11%]">
+                
                 Download Profile
               </Button>
+              </a>
             </Column>
-            <Column className="absolute bg-indigo_900 bottom-[0] justify-end lg:p-[29px] xl:p-[33px] 2xl:p-[38px] 3xl:p-[45px] w-[100%]">
+            <Column className="absolute bg-indigo_900 bottom-[0.5] justify-end lg:p-[25px] w-[100%]">
               <Text className="font-semibold 2xl:ml-[111px] 3xl:ml-[133px] lg:ml-[86px] xl:ml-[98px] lg:mt-[13px] xl:mt-[15px] 2xl:mt-[17px] 3xl:mt-[20px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-white_A700 w-[auto]">
                 Who we are
               </Text>
@@ -137,10 +138,10 @@ const Home1Page = () => {
                 <Text className="font-medium mt-[3px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[38px] text-lime_700 w-[auto]">
                   Our Company
                 </Text>
-                <Text className="font-medium mb-[3px] lg:ml-[161px] xl:ml-[185px] 2xl:ml-[208px] 3xl:ml-[249px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[38px] text-lime_700 w-[auto]">
+                <Text className="font-medium mb-[3px] lg:ml-[220px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[38px] text-lime_700 w-[auto]">
                   Our Services
                 </Text>
-                <Text className="font-medium lg:ml-[174px] xl:ml-[199px] 2xl:ml-[224px] 3xl:ml-[268px] my-[2px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[38px] text-lime_700 w-[auto]">
+                <Text className="font-medium lg:ml-[220px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] 3xl:text-[38px] text-lime_700 w-[auto]">
                   Our Projects
                 </Text>
               </Row>
@@ -217,24 +218,24 @@ const Home1Page = () => {
             IIC construction maintains performance and quality of the highest
             standard, Health and safety is a top priority
           </Text>
-          <Stack className="lg:h-[2321px] xl:h-[2655px] 2xl:h-[2987px] 3xl:h-[3583px] lg:mt-[21px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] w-[100%]">
-            <Stack className="absolute lg:h-[1872px] xl:h-[2141px] 2xl:h-[2408px] 3xl:h-[2889px] top-[0] w-[100%]">
-              <Stack className="absolute bottom-[0] lg:h-[1870px] xl:h-[2139px] 2xl:h-[2406px] 3xl:h-[2887px] w-[100%]">
-                <Stack className="absolute lg:h-[1334px] xl:h-[1525px] 2xl:h-[1716px] 3xl:h-[2058px] top-[0] w-[100%]">
-                  <Stack className="absolute lg:h-[1334px] xl:h-[1525px] 2xl:h-[1716px] 3xl:h-[2058px] w-[100%]">
-                    <div className="absolute bg-indigo_900 bottom-[0] lg:h-[333px] xl:h-[381px] 2xl:h-[429px] 3xl:h-[514px] w-[100%]"></div>
-                    <Column className="absolute bg-yellow_100 inset-x-[0] lg:p-[50px] xl:p-[57px] 2xl:p-[65px] 3xl:p-[78px] top-[0] w-[100%]">
+          <Stack className="lg:h-[1900px] lg:mt-[21px] w-[100%]">
+            <Stack className="absolute lg:h-[1650px] top-[0] w-[100%]">
+              <Stack className="absolute bottom-[0] lg:h-[2000px] w-[100%]">
+                <Stack className="absolute lg:h-[1500px] top-[3] w-[100%]">
+                  <Stack className="absolute lg:h-[1500px] w-[100%]">
+                    
+                    <Column className="absolute bg-yellow_100 inset-x-[0] lg:p-[50px] top-[0] w-[100%]">
                       <Text className="font-semibold 3xl:ml-[100px] lg:ml-[65px] xl:ml-[74px] 2xl:ml-[84px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
                         What we do
                       </Text>
                       <List
-                        className="gap-[0] lg:mb-[29px] xl:mb-[33px] 2xl:mb-[38px] 3xl:mb-[45px] min-h-[auto] lg:ml-[62px] xl:ml-[71px] 2xl:ml-[80px] 3xl:ml-[96px] lg:mt-[49px] xl:mt-[56px] 2xl:mt-[63px] 3xl:mt-[75px] w-[88%]"
+                        className="gap-[0] min-h-[auto] lg:ml-[62px] xl:ml-[71px] 2xl:ml-[80px] 3xl:ml-[96px] lg:mt-[49px] xl:mt-[56px] 2xl:mt-[63px] 3xl:mt-[75px] w-[88%]"
                         orientation="vertical"
                       >
                         <Row className="items-center justify-between lg:my-[30px] xl:my-[34px] 2xl:my-[39px] 3xl:my-[46px] w-[100%]">
                           <Column className="bg-white_A700 items-center mb-[1px] lg:p-[21px] xl:p-[24px] 2xl:p-[28px] 3xl:p-[33px] w-[45%]">
                             <Img
-                              src="images/img_ellipse6.png"
+                              src="images/bridge1.JPG"
                               className="lg:h-[114px] xl:h-[130px] 2xl:h-[147px] 3xl:h-[176px] rounded-radius50 lg:w-[113px] xl:w-[129px] 2xl:w-[146px] 3xl:w-[175px]"
                               alt="EllipseSix"
                             />
@@ -259,7 +260,7 @@ const Home1Page = () => {
                           </Column>
                           <Column className="bg-white_A700 items-center mt-[1px] lg:p-[21px] xl:p-[24px] 2xl:p-[27px] 3xl:p-[32px] w-[45%]">
                             <Img
-                              src="images/img_ellipse11.png"
+                              src="images/FDWA2602.JPG"
                               className="lg:h-[114px] xl:h-[130px] 2xl:h-[147px] 3xl:h-[176px] rounded-radius50 lg:w-[113px] xl:w-[129px] 2xl:w-[146px] 3xl:w-[175px]"
                               alt="EllipseEleven"
                             />
@@ -317,7 +318,11 @@ const Home1Page = () => {
                             </Button>
                           </Column>
                           <Column className="bg-white_A700 items-center lg:p-[24px] xl:p-[27px] 2xl:p-[31px] 3xl:p-[37px] w-[45%]">
-                            <div className="bg-black_900 lg:h-[114px] xl:h-[130px] 2xl:h-[147px] 3xl:h-[176px] rounded-radius50 lg:w-[113px] xl:w-[129px] 2xl:w-[146px] 3xl:w-[175px]"></div>
+                          <Img
+                              src="images/light2.jpg"
+                              className="lg:h-[114px] xl:h-[130px] 2xl:h-[147px] 3xl:h-[176px] rounded-radius50 lg:w-[113px] xl:w-[129px] 2xl:w-[146px] 3xl:w-[175px]"
+                              alt="EllipseEight"
+                            />
                             <Text className="font-semibold leading-[normal] lg:mt-[22px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-black_900 text-center w-[76%]">
                               <span className="text-indigo_900 font-inter font-bold lg:text-[28px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[43px]">
                                 Electrification
@@ -342,27 +347,10 @@ const Home1Page = () => {
                       </List>
                     </Column>
                   </Stack>
-                  <Column
-                    className="absolute bg-cover bg-repeat bottom-[0] lg:p-[58px] xl:p-[66px] 2xl:p-[75px] 3xl:p-[90px] w-[100%]"
-                    style={{ backgroundImage: "url('images/img_group18.png')" }}
-                  >
-                    <Text className="font-semibold lg:ml-[59px] xl:ml-[68px] 2xl:ml-[77px] 3xl:ml-[92px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-white_A700 w-[auto]">
-                      Have a project?
-                    </Text>
-                    <Text className="font-normal leading-[normal] lg:ml-[54px] xl:ml-[62px] 2xl:ml-[70px] 3xl:ml-[84px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[32%]">
-                      We have a proven track record in providing the right team
-                      with the skills, knowledge and experience to consistently
-                      deliver challenging projects.{" "}
-                    </Text>
-                    <Button className="font-semibold xl:mb-[10px] 2xl:mb-[12px] 3xl:mb-[14px] lg:mb-[9px] lg:ml-[56px] xl:ml-[64px] 2xl:ml-[73px] 3xl:ml-[87px] lg:mt-[21px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-center w-[14%]">
-                      Get in touch
-                    </Button>
-                  </Column>
                 </Stack>
-                <div className="absolute bg-white_A700 bottom-[0] lg:h-[542px] xl:h-[620px] 2xl:h-[697px] 3xl:h-[836px] inset-x-[0] w-[100%]"></div>
               </Stack>
-              <Column className="absolute bg-white_A700 bottom-[0] inset-x-[0] lg:p-[56px] xl:p-[64px] 2xl:p-[72px] 3xl:p-[86px] w-[100%]">
-                <Row className="items-center 3xl:ml-[103px] lg:ml-[66px] xl:ml-[76px] 2xl:ml-[86px] w-[63%]">
+              <Column className="absolute bg-white_A700 bottom-[0] pb-[100px] mb-[200px] inset-x-[0] lg:pt-[5px] lg:px-[100px] w-[100%]">
+                <Row className="items-center lg:ml-[66px] w-[63%]">
                   <Text className="font-semibold lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
                     Testimonial
                   </Text>
@@ -370,14 +358,9 @@ const Home1Page = () => {
                     Some Clients
                   </Text>
                 </Row>
-                <Row className="items-center 2xl:mb-[11px] 3xl:mb-[13px] lg:mb-[8px] xl:mb-[9px] lg:ml-[59px] xl:ml-[67px] 2xl:ml-[76px] 3xl:ml-[91px] lg:mr-[56px] xl:mr-[64px] 2xl:mr-[73px] 3xl:mr-[87px] lg:mt-[41px] xl:mt-[47px] 2xl:mt-[53px] 3xl:mt-[63px] w-[88%]">
+                <Row className="items-center lg:mb-[15px] xl:mb-[9px] lg:ml-[59px] xl:ml-[67px] 2xl:ml-[76px] 3xl:ml-[91px] lg:mr-[56px] xl:mr-[64px] 2xl:mr-[73px] 3xl:mr-[87px] lg:mt-[20px] w-[88%]">
                   <Column className="bg-red_A700 lg:p-[20px] xl:p-[23px] 2xl:p-[26px] 3xl:p-[31px] w-[49%]">
                     <Row className="lg:ml-[10px] xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:mr-[6px] xl:mr-[7px] 2xl:mr-[8px] 3xl:mr-[9px] w-[96%]">
-                      <Img
-                        src="images/img_ellipse10.png"
-                        className="xl:h-[107px] 2xl:h-[121px] 3xl:h-[145px] lg:h-[94px] rounded-radius50 w-[25%]"
-                        alt="EllipseTen"
-                      />
                       <Text className="font-medium leading-[normal] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[25px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[71%]">
                         “Throughout the construction process IIC Construction
                         was efficient, approachable, flexible and we felt that
@@ -390,9 +373,6 @@ const Home1Page = () => {
                         company.”
                       </Text>
                     </Row>
-                    <Text className="font-semibold lg:mb-[45px] xl:mb-[52px] 2xl:mb-[59px] 3xl:mb-[70px] lg:ml-[116px] xl:ml-[133px] 2xl:ml-[150px] 3xl:ml-[180px] lg:mt-[29px] xl:mt-[33px] 2xl:mt-[38px] 3xl:mt-[45px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[auto]">
-                      Mgt. FERMA
-                    </Text>
                   </Column>
                   <Column className="bg-indigo_900 font-inter items-center lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:p-[40px] xl:p-[46px] 2xl:p-[52px] 3xl:p-[62px] w-[49%]">
                     <Column className="items-center lg:my-[14px] xl:my-[16px] 2xl:my-[19px] 3xl:my-[22px] rounded-radius10 w-[96%]">
@@ -471,7 +451,7 @@ const Home1Page = () => {
                 </Row>
               </Column>
             </Stack>
-            <footer className="absolute bg-indigo_900 bottom-[0] w-[100%]">
+            <footer className="absolute bg-indigo_900 pt-[50px] bottom-[0] w-[100%]">
               <Column className="items-center w-[100%]">
                 <Row className="w-[80%]">
                   <Column className="mt-[1px] w-[24%]">

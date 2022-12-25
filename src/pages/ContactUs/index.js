@@ -1,13 +1,16 @@
-import React from "react";
+import Modal from "../../components/Modal";
+import React,{useState} from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Column, Row, Img, Text, Button, Line } from "components";
+import { Column, Row, Img, Text, Button, Line } from "../../components";
 
 const ContactUsPage = () => {
+  const [showModal,setShowModal] = useState(false);
+  const hideModal = ()=> setShowModal(false);
   const navigate = useNavigate();
 
   function handleNavigate15() {
-    navigate("/home1");
+    navigate("/");
   }
   function handleNavigate16() {
     navigate("/about");
@@ -52,7 +55,7 @@ const ContactUsPage = () => {
           >
             Projects
           </Text>
-          <Button className="font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[8%]">
+          <Button className="font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[20%]">
             Contact us
           </Button>
         </Row>
@@ -76,7 +79,7 @@ const ContactUsPage = () => {
               handle your <br />
               projects
             </Text>
-            <Button className="font-normal lg:ml-[54px] xl:ml-[62px] 2xl:ml-[70px] 3xl:ml-[84px] lg:mt-[27px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[12%]">
+            <Button className="font-normal lg:ml-[54px] xl:ml-[62px] 2xl:ml-[70px] 3xl:ml-[84px] lg:mt-[27px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[12%]" onClick={()=>setShowModal(true)}>
               Get in touch
             </Button>
           </Column>
@@ -146,6 +149,13 @@ const ContactUsPage = () => {
           <Line className="bg-white_A700 h-[1px] w-[100%]" />
         </Column>
       </Column>
+
+
+      {/* Contact Modal */}
+
+    {
+      showModal && <Modal dismiss={hideModal}/>
+    }
     </>
   );
 };

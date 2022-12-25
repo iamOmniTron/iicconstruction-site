@@ -1,13 +1,13 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Column, Row, Img, Text, Line, Button, Stack } from "components";
+import { Column, Row, Img, Text, Line, Button, Stack } from "../../components";
 
 const AboutPage = () => {
   const navigate = useNavigate();
 
   function handleNavigate8() {
-    navigate("/home1");
+    navigate("/");
   }
   function handleNavigate9() {
     navigate("/services");
@@ -59,7 +59,7 @@ const AboutPage = () => {
             Projects
           </Text>
           <Button
-            className="common-pointer font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[8%]"
+            className="common-pointer font-semibold lg:ml-[33px] xl:ml-[38px] 2xl:ml-[43px] 3xl:ml-[51px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[20%]"
             onClick={handleNavigate11}
           >
             Contact us
@@ -79,10 +79,8 @@ const AboutPage = () => {
                 Experience.
               </Text>
               <Text className="font-normal leading-[normal] 3xl:ml-[115px] lg:ml-[74px] xl:ml-[85px] 2xl:ml-[96px] lg:mt-[42px] xl:mt-[48px] 2xl:mt-[54px] 3xl:mt-[64px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-black_900 w-[31%]">
-                A customer-first approach, delivering quality <br />
+                A customer-first approach, delivering quality
                 projects from inception to completion on time
-                <br />
-                <br />
                 and within budgeted time frame.{" "}
               </Text>
               <Button className="font-normal 3xl:ml-[115px] lg:ml-[74px] xl:ml-[85px] 2xl:ml-[96px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[11%]">
@@ -282,29 +280,31 @@ const AboutPage = () => {
               </Row>
             </Column>
           </Row>
-          <Stack
-            className="bg-cover bg-repeat lg:h-[332px] xl:h-[379px] 2xl:h-[427px] 3xl:h-[512px] overflow-auto pl-[3px] w-[100%]"
-            style={{ backgroundImage: "url('images/img_group28.png')" }}
-          >
-            <Column className="absolute h-[max-content] inset-y-[0] left-[10%] my-[auto] w-[29%]">
-              <Text className="font-semibold lg:ml-[4px] xl:ml-[5px] 2xl:ml-[6px] 3xl:ml-[7px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-white_A700 w-[auto]">
+          <Stack className="lg:h-[332px] lg:mt-[50px] w-[100%]">
+            <Img
+              src="images/img_rectangle11_426X1438.png"
+              className="absolute h-[326px] pt-[3px] w-[100%]"
+              alt="RectangleEleven"
+            />
+            <Column className="absolute justify-end left-[0] w-[100%]">
+              <Text className="font-semibold lg:ml-[64px] xl:ml-[73px] 2xl:ml-[83px] 3xl:ml-[99px] lg:mt-[27px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-white_A700 w-[auto]">
                 Have a project?
               </Text>
-              <Text className="font-normal leading-[normal] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[100%]">
+              <Text className="font-normal leading-[normal] lg:ml-[59px] xl:ml-[68px] 2xl:ml-[77px] 3xl:ml-[92px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[31%]">
                 We have a proven track record in providing the right team with
                 the skills, knowledge and experience to consistently deliver
                 challenging projects.{" "}
               </Text>
-              <Column className="bg-red_A700 items-center ml-[3px] lg:mt-[21px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] 2xl:p-[11px] 3xl:p-[13px] lg:p-[8px] xl:p-[9px] w-[43%]">
+              <Column className="bg-red_A700 items-center lg:ml-[62px] xl:ml-[71px] 2xl:ml-[80px] 3xl:ml-[96px] lg:mt-[21px] xl:mt-[24px] 2xl:mt-[28px] 3xl:mt-[33px] 2xl:p-[11px] 3xl:p-[13px] lg:p-[8px] xl:p-[9px] w-[13%]">
                 <Text className="font-semibold mb-[1px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[auto]">
                   Get in touch
                 </Text>
               </Column>
             </Column>
             <Img
-              src="images/img_rectangle11_426X1440.png"
-              className="absolute lg:h-[332px] xl:h-[379px] 2xl:h-[427px] 3xl:h-[512px] w-[100%]"
-              alt="RectangleEleven"
+              src="images/img_rectangle53.png"
+              className="absolute lg:h-[332px] bottom-[1px] left-[0] w-[100%]"
+              alt="RectangleFiftyThree"
             />
           </Stack>
           <Stack className="xl:h-[1126px] 2xl:h-[1266px] 3xl:h-[1519px] lg:h-[984px] lg:mt-[3px] xl:mt-[4px] 2xl:mt-[5px] 3xl:mt-[6px] w-[100%]">
@@ -319,18 +319,13 @@ const AboutPage = () => {
                   <Text className="font-semibold lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
                     Testimonials
                   </Text>
-                  <Text className="font-semibold lg:ml-[267px] xl:ml-[306px] 2xl:ml-[344px] 3xl:ml-[413px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
+                  <Text className="font-semibold lg:ml-[325px] lg:text-[31px] text-indigo_900 w-[auto]">
                     Some Clients
                   </Text>
                 </Row>
                 <Row className="items-center lg:mb-[15px] xl:mb-[17px] 2xl:mb-[20px] 3xl:mb-[24px] 3xl:ml-[100px] lg:ml-[65px] xl:ml-[74px] 2xl:ml-[84px] lg:mt-[45px] xl:mt-[51px] 2xl:mt-[58px] 3xl:mt-[69px] w-[87%]">
                   <Column className="bg-red_A700 lg:p-[20px] xl:p-[23px] 2xl:p-[26px] 3xl:p-[31px] w-[49%]">
                     <Row className="lg:ml-[10px] xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:mr-[6px] xl:mr-[7px] 2xl:mr-[8px] 3xl:mr-[9px] w-[96%]">
-                      <Img
-                        src="images/img_ellipse10.png"
-                        className="xl:h-[107px] 2xl:h-[121px] 3xl:h-[145px] lg:h-[94px] rounded-radius50 w-[25%]"
-                        alt="EllipseTen"
-                      />
                       <Text className="font-medium leading-[normal] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[25px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[71%]">
                         “Throughout the construction process IIC Construction
                         was efficient, approachable, flexible and we felt that
@@ -344,7 +339,6 @@ const AboutPage = () => {
                       </Text>
                     </Row>
                     <Text className="font-semibold lg:mb-[45px] xl:mb-[52px] 2xl:mb-[59px] 3xl:mb-[70px] lg:ml-[116px] xl:ml-[133px] 2xl:ml-[150px] 3xl:ml-[180px] lg:mt-[29px] xl:mt-[33px] 2xl:mt-[38px] 3xl:mt-[45px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[auto]">
-                      Mgt. FERMA
                     </Text>
                   </Column>
                   <Column className="bg-indigo_900 font-inter items-center lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:p-[40px] xl:p-[46px] 2xl:p-[52px] 3xl:p-[62px] w-[49%]">
@@ -424,7 +418,7 @@ const AboutPage = () => {
                 </Row>
               </Column>
             </Stack>
-            <footer className="absolute bg-indigo_900 bottom-[0] w-[100%]">
+            <footer className="absolute bg-indigo_900 bottom-[0] pt-[50px] w-[100%]">
               <Column className="items-center w-[100%]">
                 <Row className="w-[80%]">
                   <Column className="mt-[1px] w-[24%]">

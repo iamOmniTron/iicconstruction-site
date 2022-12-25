@@ -1,4 +1,4 @@
-import { Button as ButtonComponent, Img } from "components";
+import { Button as ButtonComponent, Img } from "../components";
 export default {
   title: "iic_constructions/Buttons",
   component: ButtonComponent,

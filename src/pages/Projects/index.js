@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useNavigate } from "react-router-dom";
-import { Column, Row, Img, Text, Line, Button, List, Stack } from "components";
+import { Column, Row, Img, Text, Line, Button, List, Stack } from "../../components";
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const ProjectsPage = () => {
     navigate("/services");
   }
   function handleNavigate2() {
-    navigate("/home1");
+    navigate("/");
   }
   function handleNavigate3() {
     navigate("/about");
@@ -62,39 +62,29 @@ const ProjectsPage = () => {
             <Line className="bg-black_900 h-[4px] mt-[3px] w-[95%]" />
           </Column>
           <Button
-            className="common-pointer font-semibold lg:ml-[31px] xl:ml-[35px] 2xl:ml-[40px] 3xl:ml-[48px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[8%]"
+            className="common-pointer font-semibold lg:ml-[31px] xl:ml-[35px] 2xl:ml-[40px] 3xl:ml-[48px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[20%]"
             onClick={handleNavigate6}
           >
             Contact us
           </Button>
         </Row>
         <Column className="items-center lg:mt-[10px] xl:mt-[11px] 2xl:mt-[13px] 3xl:mt-[15px] w-[100%]">
-          <Column
-            className="bg-cover bg-repeat justify-end lg:p-[42px] xl:p-[48px] 2xl:p-[55px] 3xl:p-[66px] w-[100%]"
-            style={{ backgroundImage: "url('images/img_group33.png')" }}
-          >
-            <Text className="font-semibold lg:leading-[62px] xl:leading-[71px] 2xl:leading-[80px] 3xl:leading-[96px] 3xl:ml-[108px] lg:ml-[70px] xl:ml-[80px] 2xl:ml-[90px] lg:mr-[410px] xl:mr-[469px] 2xl:mr-[528px] 3xl:mr-[633px] lg:mt-[24px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] lg:text-[62px] xl:text-[71px] 2xl:text-[80px] 3xl:text-[96px] text-indigo_900 w-[53%]">
+        <Column
+              className=" bg-cover bg-repeat justify-end lg:p-[41px] xl:p-[47px] 2xl:p-[53px] 3xl:p-[63px] top-[0] w-[100%]"
+              style={{ backgroundImage: "url('images/new.PNG')" }}
+            >
+              <Text className="font-semibold lg:leading-[62px] xl:leading-[71px] 2xl:leading-[80px] 3xl:leading-[96px] 3xl:ml-[108px] lg:ml-[70px] xl:ml-[80px] 2xl:ml-[90px] lg:mr-[410px] xl:mr-[469px] 2xl:mr-[528px] 3xl:mr-[633px] lg:mt-[24px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] lg:text-[62px] xl:text-[71px] 2xl:text-[80px] 3xl:text-[96px] text-indigo_900 w-[53%]">
               Bringing your ideas <br />
               to live with a great <br />
-              team & experience.
-            </Text>
-            <Column className="2xl:ml-[102px] 3xl:ml-[122px] lg:ml-[79px] xl:ml-[90px] lg:mr-[600px] xl:mr-[686px] 2xl:mr-[772px] 3xl:mr-[926px] lg:mt-[40px] xl:mt-[46px] 2xl:mt-[52px] 3xl:mt-[62px] w-[34%]">
-              <Text className="font-inter font-normal leading-[normal] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-black_900 w-[100%]">
-                We perform a comprehensive variety of services particularly{" "}
-                <br />
-                focused on engineering research, construction, procurement,{" "}
-                <br />
-                design, consultancy <br />
-                and general contract.{" "}
+              team & experience
               </Text>
-              <Button
-                className="common-pointer font-ibmplexsans font-normal lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[33%]"
-                onClick={handleNavigate5}
-              >
-                Get in touch
+              <Text className="font-normal leading-[normal] 3xl:ml-[115px] lg:ml-[74px] xl:ml-[85px] 2xl:ml-[96px] lg:mt-[42px] xl:mt-[48px] 2xl:mt-[54px] 3xl:mt-[64px] not-italic lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-black_900 w-[31%]">
+               We perform a comprehensive variety of services particularly focused on engineering research, construction, procurement, design, consultancy and general contract
+              </Text>
+              <Button className="font-normal 3xl:ml-[115px] lg:ml-[74px] xl:ml-[85px] 2xl:ml-[96px] lg:mt-[37px] xl:mt-[42px] 2xl:mt-[48px] 3xl:mt-[57px] not-italic lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[11%]">
+                Download Profile
               </Button>
             </Column>
-          </Column>
           <List
             className="gap-[0] min-h-[auto] lg:mt-[32px] xl:mt-[37px] 2xl:mt-[42px] 3xl:mt-[50px] w-[90%]"
             orientation="vertical"
@@ -140,16 +130,17 @@ const ProjectsPage = () => {
               </Column>
               <Column
                 className="bg-cover bg-repeat items-center lg:p-[38px] xl:p-[43px] 2xl:p-[49px] 3xl:p-[58px] w-[32%]"
-                style={{ backgroundImage: "url('images/img_group36.png')" }}
+                style={{ backgroundImage: "url('images/header.JPG')" }}
               >
-                <Text className="font-semibold leading-[normal] lg:mb-[172px] xl:mb-[197px] 2xl:mb-[222px] 3xl:mb-[266px] lg:mt-[29px] xl:mt-[33px] 2xl:mt-[38px] 3xl:mt-[45px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[95%]">
+                <Text className="font-semibold leading-[normal] mb-[3px] lg:mt-[192px] xl:mt-[220px] 2xl:mt-[248px] 3xl:mt-[297px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[91%]">
                   Development of various types of residential houses at
                   University Satelite Town
                 </Text>
               </Column>
-              <Column className="bg-bluegray_100 font-inter items-end lg:p-[43px] xl:p-[49px] 2xl:p-[56px] 3xl:p-[67px] w-[32%]">
-                <Text className="font-normal leading-[normal] lg:mb-[30px] xl:mb-[34px] 2xl:mb-[39px] 3xl:mb-[46px] lg:mt-[166px] xl:mt-[190px] 2xl:mt-[214px] 3xl:mt-[256px] not-italic lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-black_900 w-[85%]">
-                  Construction of 12 Nos 300KVA transformers Substation
+              <Column className="bg-cover bg-repeat bg-bluegray_100 font-inter items-end lg:p-[43px] xl:p-[49px] 2xl:p-[56px] 3xl:p-[67px] w-[32%]"
+              style={{ backgroundImage: "url('images/bridge1.JPG')" }}>
+                <Text className="font-semibold leading-[normal] lg:mb-[30px] xl:mb-[34px] 2xl:mb-[39px] 3xl:mb-[46px] lg:mt-[166px] xl:mt-[190px] 2xl:mt-[214px] 3xl:mt-[256px] not-italic lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[85%]">
+                  Bridge for Infrastructure Construction
                 </Text>
               </Column>
             </Row>
@@ -174,8 +165,8 @@ const ProjectsPage = () => {
                   West LGA
                 </Text>
               </Column>
-              <Column className="bg-bluegray_100 font-inter lg:p-[54px] xl:p-[62px] 2xl:p-[70px] 3xl:p-[84px] w-[32%]">
-                <Text className="font-normal leading-[normal] lg:ml-[10px] xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:mt-[170px] xl:mt-[194px] 2xl:mt-[219px] 3xl:mt-[262px] not-italic lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-black_900 w-[80%]">
+              <Column className="bg-cover bg-repeat items-end bg-bluegray_100 font-inter lg:p-[54px] xl:p-[62px] 2xl:p-[70px] 3xl:p-[84px] w-[32%]" style={{ backgroundImage: "url('images/light1.JPG')" }}>
+                <Text className="font-semibold leading-[normal] lg:ml-[10px] xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:mt-[170px] xl:mt-[194px] 2xl:mt-[219px] 3xl:mt-[262px] not-italic lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[80%]">
                   Construction of 50 <br />
                   Nos of Solar Street <br />
                   Lights
@@ -212,14 +203,39 @@ const ProjectsPage = () => {
                 </Text>
               </Column>
             </Row>
+            {/* HERE */}
+            <Row className="items-center justify-between 3xl:my-[10px] lg:my-[7px] xl:my-[8px] 2xl:my-[9px] w-[100%]">
+              <Column
+                className="bg-cover bg-repeat lg:p-[29px] xl:p-[33px] 2xl:p-[38px] 3xl:p-[45px] w-[32%]"
+                style={{ backgroundImage: "url('images/bridge2.JPG')" }}
+              >
+                <Text className="font-semibold leading-[normal] mb-[3px] lg:mt-[192px] xl:mt-[220px] 2xl:mt-[248px] 3xl:mt-[297px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[91%]">
+                  Construction of Bridge to facilitate Transportation
+                </Text>
+              </Column>
+              <Column
+                className="bg-cover bg-repeat items-center lg:p-[38px] xl:p-[43px] 2xl:p-[49px] 3xl:p-[58px] w-[32%]"
+                style={{ backgroundImage: "url('images/road1.JPG')" }}
+              >
+                <Text className="font-semibold leading-[normal] mb-[3px] lg:mt-[192px] xl:mt-[220px] 2xl:mt-[248px] 3xl:mt-[297px] lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[91%]">
+                  Construction of Urualla-Amaeshi Road, Akokwa, Nigeria
+                </Text>
+              </Column>
+              <Column className="bg-cover bg-repeat bg-bluegray_100 font-inter items-end lg:p-[43px] xl:p-[49px] 2xl:p-[56px] 3xl:p-[67px] w-[32%]"
+              style={{ backgroundImage: "url('images/road3.JPG')" }}>
+                <Text className="font-semibold leading-[normal] lg:mb-[30px] xl:mb-[34px] 2xl:mb-[39px] 3xl:mb-[46px] lg:mt-[166px] xl:mt-[190px] 2xl:mt-[214px] 3xl:mt-[256px] not-italic lg:text-[18px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-white_A700 w-[85%]">
+                  Renovation of Nnewi-Okigwe Road, Amaeshi, Nigeria
+                </Text>
+              </Column>
+            </Row>
           </List>
-          <Stack className="lg:h-[332px] xl:h-[379px] 2xl:h-[427px] 3xl:h-[512px] lg:mt-[50px] xl:mt-[57px] 2xl:mt-[65px] 3xl:mt-[78px] overflow-auto w-[100%]">
+          <Stack className="lg:h-[332px] lg:mt-[50px] w-[100%]">
             <Img
               src="images/img_rectangle11_426X1438.png"
-              className="absolute lg:h-[332px] xl:h-[379px] 2xl:h-[427px] 3xl:h-[512px] w-[100%]"
+              className="absolute h-[326px] pt-[3px] w-[100%]"
               alt="RectangleEleven"
             />
-            <Column className="absolute justify-end left-[0] lg:p-[49px] xl:p-[56px] 2xl:p-[64px] 3xl:p-[76px] w-[100%]">
+            <Column className="absolute justify-end left-[0] w-[100%]">
               <Text className="font-semibold lg:ml-[64px] xl:ml-[73px] 2xl:ml-[83px] 3xl:ml-[99px] lg:mt-[27px] xl:mt-[31px] 2xl:mt-[35px] 3xl:mt-[42px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-white_A700 w-[auto]">
                 Have a project?
               </Text>
@@ -236,7 +252,7 @@ const ProjectsPage = () => {
             </Column>
             <Img
               src="images/img_rectangle53.png"
-              className="absolute lg:h-[332px] xl:h-[379px] 2xl:h-[427px] 3xl:h-[512px] left-[0] w-[100%]"
+              className="absolute lg:h-[332px] bottom-[1px] left-[0] w-[100%]"
               alt="RectangleFiftyThree"
             />
           </Stack>
@@ -248,18 +264,13 @@ const ProjectsPage = () => {
                   <Text className="font-semibold lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
                     Testimonial
                   </Text>
-                  <Text className="font-semibold lg:ml-[274px] xl:ml-[314px] 2xl:ml-[353px] 3xl:ml-[423px] lg:text-[31px] xl:text-[35px] 2xl:text-[40px] 3xl:text-[48px] text-indigo_900 w-[auto]">
+                  <Text className="font-semibold lg:ml-[310px] lg:text-[31px] text-indigo_900 w-[auto]">
                     Some Clients
                   </Text>
                 </Row>
                 <Row className="items-center 3xl:ml-[110px] lg:ml-[71px] xl:ml-[81px] 2xl:ml-[92px] 3xl:mr-[104px] lg:mr-[67px] xl:mr-[77px] 2xl:mr-[87px] lg:mt-[45px] xl:mt-[51px] 2xl:mt-[58px] 3xl:mt-[69px] w-[86%]">
                   <Column className="bg-red_A700 lg:p-[20px] xl:p-[23px] 2xl:p-[26px] 3xl:p-[31px] w-[49%]">
                     <Row className="lg:ml-[10px] xl:ml-[11px] 2xl:ml-[13px] 3xl:ml-[15px] lg:mr-[6px] xl:mr-[7px] 2xl:mr-[8px] 3xl:mr-[9px] w-[96%]">
-                      <Img
-                        src="images/img_ellipse10.png"
-                        className="xl:h-[107px] 2xl:h-[121px] 3xl:h-[145px] lg:h-[94px] rounded-radius50 w-[25%]"
-                        alt="EllipseTen"
-                      />
                       <Text className="font-medium leading-[normal] lg:ml-[14px] xl:ml-[16px] 2xl:ml-[19px] 3xl:ml-[22px] lg:mt-[25px] xl:mt-[29px] 2xl:mt-[33px] 3xl:mt-[39px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[71%]">
                         “Throughout the construction process IIC Construction
                         was efficient, approachable, flexible and we felt that
@@ -272,8 +283,7 @@ const ProjectsPage = () => {
                         company.”
                       </Text>
                     </Row>
-                    <Text className="font-semibold lg:mb-[45px] xl:mb-[52px] 2xl:mb-[59px] 3xl:mb-[70px] lg:ml-[116px] xl:ml-[133px] 2xl:ml-[150px] 3xl:ml-[180px] lg:mt-[29px] xl:mt-[33px] 2xl:mt-[38px] 3xl:mt-[45px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[auto]">
-                      Mgt. FERMA
+                    <Text className="font-semibold lg:mb-[45px] xl:mb-[52px] 2xl:mb-[59px] 3xl:mb-[70px] lg:ml-[116px] xl:ml-[133px] 2xl:ml-[150px] 3xl:ml-[180px] lg:mt-[29px] xl:mt-[33px] 2xl:mt-[38px] 3xl:mt-[45px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 3xl:text-[21px] text-white_A700 w-[auto]">s
                     </Text>
                   </Column>
                   <Column className="bg-indigo_900 font-inter items-center lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:p-[40px] xl:p-[46px] 2xl:p-[52px] 3xl:p-[62px] w-[49%]">
@@ -353,78 +363,83 @@ const ProjectsPage = () => {
                 </Row>
               </Column>
             </Stack>
-            <footer className="absolute bg-indigo_900 bottom-[0] w-[100%]">
-              <Row className="w-[80%]">
-                <Column className="mt-[1px] w-[24%]">
-                  <Img
-                    src="images/img_clock.svg"
-                    className="lg:h-[59px] xl:h-[67px] 2xl:h-[76px] 3xl:h-[91px] lg:w-[58px] xl:w-[66px] 2xl:w-[75px] 3xl:w-[90px]"
-                    alt="clock"
-                  />
-                  <Text className="font-medium lg:mt-[14px] xl:mt-[16px] 2xl:mt-[19px] 3xl:mt-[22px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                    IIC Constructions Limited
+            <footer className="absolute bg-indigo_900 bottom-[0] pt-[50px] w-[100%]">
+              <Column className="items-center w-[100%]">
+                <Row className="w-[80%]">
+                  <Column className="mt-[1px] w-[24%]">
+                    <Img
+                      src="images/img_clock_75X75.svg"
+                      className="lg:h-[59px] xl:h-[67px] 2xl:h-[76px] 3xl:h-[91px] lg:w-[58px] xl:w-[66px] 2xl:w-[75px] 3xl:w-[90px]"
+                      alt="clock"
+                    />
+                    <Text className="font-medium lg:mt-[14px] xl:mt-[16px] 2xl:mt-[19px] 3xl:mt-[22px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
+                      IIC Constructions Limited
+                    </Text>
+                    <Text className="font-light leading-[normal] lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[58%]">
+                      committed to total <br />
+                      service delivery.{" "}
+                    </Text>
+                  </Column>
+                  <Text className="font-semibold leading-[normal] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[26%]">
+                    <span className="text-white_A700 font-ibmplexsans font-bold">
+                      Contact
+                      <br />
+                    </span>
+                    <span className="text-white_A700 font-ibmplexsans font-normal not-italic">
+                      <br />
+                      Suite 308A DBM Plaza, <br />
+                      <br />
+                      Plot 1381-1383, <br />
+                      Aminu Kano Crescent <br />
+                      <br />
+                      Wuse II, Abuja. <br />
+                      <br />
+                      Email: info@iicconstructions.com
+                      <br />
+                      <br />
+                      Tel: +234 803 311 7337, <br /> +234 703 535 2904.
+                    </span>
                   </Text>
-                  <Text className="font-light leading-[normal] lg:mt-[18px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[58%]">
-                    committed to total <br />
-                    service delivery.{" "}
-                  </Text>
-                </Column>
-                <Text className="font-semibold leading-[normal] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[26%]">
-                  <span className="text-white_A700 font-ibmplexsans font-bold">
-                    Contact
-                    <br />
-                  </span>
-                  <span className="text-white_A700 font-ibmplexsans font-normal not-italic">
-                    <br />
-                    Suite 308A DBM Plaza, <br />
-                    <br />
-                    Plot 1381-1383, <br />
-                    Aminu Kano Crescent <br />
-                    <br />
-                    Wuse II, Abuja. <br />
-                    <br />
-                    Email: info@iicconstructions.com
-                    <br />
-                    <br />
-                    Tel: +234 803 311 7337, <br /> +234 703 535 2904.
-                  </span>
-                </Text>
-                <Column className="lg:ml-[56px] xl:ml-[64px] 2xl:ml-[73px] 3xl:ml-[87px] mt-[1px] w-[44%]">
-                  <Row className="items-center justify-between ml-[3px] w-[96%]">
-                    <Text
-                      className="common-pointer font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]"
-                      onClick={handleNavigate7}
-                    >
-                      OUR COMPANY
+                  <Column className="lg:ml-[56px] xl:ml-[64px] 2xl:ml-[73px] 3xl:ml-[87px] lg:mt-[30px] xl:mt-[34px] 2xl:mt-[39px] 3xl:mt-[46px] w-[44%]">
+                    <Row className="items-center w-[96%]">
+                      <Text
+                        className="common-pointer font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]"
+                        onClick={()=>navigate("/about")}
+                      >
+                        OUR COMPANY
+                      </Text>
+                      <Text
+                        className="common-pointer font-semibold lg:ml-[23px] xl:ml-[26px] 2xl:ml-[30px] 3xl:ml-[36px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]"
+                        onClick={()=>navigate("/services")}
+                      >
+                        OUR SERVICES
+                      </Text>
+                      <Text
+                        className="common-pointer font-semibold lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]"
+                        onClick={()=>navigate("/projects")}
+                      >
+                        OUR PROJECTS
+                      </Text>
+                    </Row>
+                    <Row className="items-center ml-[3px] lg:mt-[22px] xl:mt-[25px] 2xl:mt-[29px] 3xl:mt-[34px] w-[99%]">
+                      <Text className="font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
+                        OUR PARTNERS
+                      </Text>
+                      <Text className="font-semibold lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
+                        CONTACT{" "}
+                      </Text>
+                      <Text className="font-semibold lg:ml-[63px] xl:ml-[72px] 2xl:ml-[82px] 3xl:ml-[98px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
+                        PRIVATE POLICY
+                      </Text>
+                    </Row>
+                    <Text className="font-semibold lg:mt-[60px] xl:mt-[69px] 2xl:mt-[78px] 3xl:mt-[93px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
+                      (C) 2022 CQRE INC. | STUDIO. All Rights Reserved
                     </Text>
-                    <Text
-                      className="common-pointer font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]"
-                      onClick={handleNavigate1}
-                    >
-                      OUR SERVICES
-                    </Text>
-                    <Text className="font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                      OUR PROJECTS
-                    </Text>
-                  </Row>
-                  <Row className="items-center ml-[3px] lg:mt-[52px] xl:mt-[60px] 2xl:mt-[68px] 3xl:mt-[81px] w-[99%]">
-                    <Text className="font-semibold lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                      OUR PARTNERS
-                    </Text>
-                    <Text className="font-semibold lg:ml-[18px] xl:ml-[21px] 2xl:ml-[24px] 3xl:ml-[28px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                      CONTACT{" "}
-                    </Text>
-                    <Text className="font-semibold lg:ml-[63px] xl:ml-[72px] 2xl:ml-[82px] 3xl:ml-[98px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                      PRIVATE POLICY
-                    </Text>
-                  </Row>
-                  <Text className="font-semibold lg:mt-[60px] xl:mt-[69px] 2xl:mt-[78px] 3xl:mt-[93px] lg:text-[15px] xl:text-[17px] 2xl:text-[20px] 3xl:text-[24px] text-white_A700 w-[auto]">
-                    (C) 2022 CQRE INC. | STUDIO. All Rights Reserved
-                  </Text>
-                </Column>
-              </Row>
+                  </Column>
+                </Row>
+                <Line className="bg-white_A700 h-[1px] lg:mt-[31px] xl:mt-[35px] 2xl:mt-[40px] 3xl:mt-[48px] w-[100%]" />
+              </Column>
             </footer>
-            <Line className="absolute bg-white_A700 bottom-[14%] h-[1px] inset-x-[0] w-[100%]" />
           </Stack>
         </Column>
       </Column>
@@ -433,3 +448,23 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
+
+
+
+
+
+
+{/* <Text className="font-semibold lg:leading-[62px] xl:leading-[71px] 2xl:leading-[80px] 3xl:leading-[96px] 3xl:ml-[108px] lg:ml-[70px] xl:ml-[80px] 2xl:ml-[90px] lg:mr-[410px] xl:mr-[469px] 2xl:mr-[528px] 3xl:mr-[633px] lg:mt-[24px] xl:mt-[27px] 2xl:mt-[31px] 3xl:mt-[37px] lg:text-[62px] xl:text-[71px] 2xl:text-[80px] 3xl:text-[96px] text-indigo_900 w-[53%]">
+Bringing your ideas <br />
+to live with a great <br />
+team & experience.
+</Text>
+<Column className="2xl:ml-[102px] 3xl:ml-[122px] lg:ml-[79px] xl:ml-[90px] lg:mr-[600px] xl:mr-[686px] 2xl:mr-[772px] 3xl:mr-[926px] lg:mt-[40px] xl:mt-[46px] 2xl:mt-[52px] 3xl:mt-[62px] w-[34%]">
+<Text className="font-inter leading-[normal] not-italic lg:text-[15px] text-white w-[100%]">
+  We perform a comprehensive variety of services particularly{" "}
+  <br />
+  focused on engineering research, construction, procurement,{" "}
+  <br />
+  design, consultancy <br />
+  and general contract.{" "}
+</Text> */}
